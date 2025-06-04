@@ -239,7 +239,7 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-color);
     padding: 18px 15px;
-    font-size: 13px;
+    font-size: 23px;
     text-transform: uppercase;
     font-family: var(--nav-font);
     font-weight: 400;
@@ -252,7 +252,8 @@ h6 {
 
   .navmenu a i,
   .navmenu a:focus i {
-    font-size: 12px;
+    /*font-size: 12px;*/
+    font-size: 22px;
     line-height: 0;
     margin-left: 5px;
     transition: 0.3s;
@@ -290,7 +291,8 @@ h6 {
 
   .navmenu .dropdown ul a {
     padding: 10px 20px;
-    font-size: 15px;
+    /*font-size: 15px;*/
+    font-size: 25px;
     text-transform: none;
     color: var(--nav-dropdown-color);
   }
