@@ -298,7 +298,7 @@ h6 {
   }
 
   .navmenu .dropdown ul a i {
-    font-size: 12px;
+    font-size: 25px;
   }
 
   .navmenu .dropdown ul a:hover,
@@ -341,6 +341,7 @@ h6 {
   .navmenu {
     padding: 0;
     z-index: 9997;
+    height: 50%;
   }
 
   .navmenu ul {
