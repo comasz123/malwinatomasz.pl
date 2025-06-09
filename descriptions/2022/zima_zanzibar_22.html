@@ -4,15 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Nowy Rok 2021 - Malwina&Tomasz podróże po świecie</title>
+  <title>Zima na Zanzibarze, 2022 - Malwina&Tomasz podróże po świecie</title>
   <meta name="description" content="Prywatna strona o podróżach">
-  <meta name="keywords" content="podróże, travel, radość, fun, Nowy Rok, New Year">
+  <meta name="keywords" content="podróże, travel, radość, fun, wakacje, holidays">
 
   <!-- Facebook tags -->
   <meta property="og:title" content="Malwina&Tomasz" />
   <meta property="og:description" content="Kochamy podróżować i ta strona jest o naszych wyprawach" />
   <meta property="og:image" content="../../../assets/img/logo_round.png" />
-  <meta property="og:url" content="https://www.malwinatomasz.pl/descriptions/2021/newyear_2021.html" />
+  <meta property="og:url" content="https://www.malwinatomasz.pl/descriptions/2022/zima_zanzibar_22.html" />
   <meta property="og:type" content="website" />
 
 
@@ -49,7 +49,7 @@
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <a href="../../index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/logo_round.png" alt="">
+        <img src="../../assets/img/logo_round.png" alt="">
         <h1 class="sitename">Malwina&Tomasz</h1>
       </a>
 
@@ -75,26 +75,27 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span class="description-title">Nowy Rok 2021</span>
-        <h2>Nowy Rok 2021</h2>
+        <span class="description-title">Zima na Zanzibarze - 2022</span>
+        <h2>Zima na Zanzibarze - 2022</h2>
           <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="row gy-4 justify-content-left">
+              
               <div class="col-lg-4">
-                <img src="../../assets/img/trips/2021/vienna_baden/google_1.png" class="img-fluid" alt="">
+                <img src="https://89.77.242.172:8081/trips/2022/zanzibar_22/zanzibar_22_flight" class="img-fluid" alt="">
+              </div>
+
+              <div class="col-lg-7">
+                <h3 class="text-start">Przelot samolotem czarterowym</h3>
+                <h3 class="text-start">Kraków - Stone Town - Krakow</h3>
+                <h3 class="text-start" id="flight_zz">około 15,00 km</h3>
+                <br/>
+                  <h3 class="text-start">Pobyt na wyspie:</h3>
+                  <h3 class="text-start"><a href="./cities/stone_town_22.html">Stone Town ,</a></h3>
+
+                <img src="https://89.77.242.172:8081/trips/2022/zanzibar_22/zanzibar_22_car" class="img-fluid" alt="">
               </div>
               
-              <div class="col-lg-7">
-                <h3 class="text-start">Samochodem z Krakowa do Baden do wód,</h3>
-                <h3 class="text-start">potem do Wiednia na Nowy Rok,</h3>
-                <h3 class="text-start">powrót do domu</h3>
-                <h3 class="text-start" id="car_ny_21">razem około 1,000 km</h3>
-                <br/>
-                <p id="sum"></p>
-                <h3 class="text-start"><a href="cities/vienna_21.html">Wiedeń</a></h3>
-                <h3 class="text-start"><a href="cities/baden_21.html">Baden</a></h3>
-                
             </div>
-
           </div>
         
       </div><!-- End Section Title -->
@@ -143,14 +144,14 @@
   <!-- Main JS File -->
   <script src="../../assets/js/main.js"></script>
 
-<script>
-  const tripText = document.getElementById('trip1').textContent;
-  const match = tripText.match(/([\d,]+)/);
-  const tripValue = match ? parseInt(match[1].replace(/,/g, '')) : 0;
+  <script>
+    const tripText = document.getElementById('trip3').textContent;
+    const match = tripText.match(/([\d,]+)/);
+    const tripValue = match ? parseInt(match[1].replace(/,/g, '')) : 0;
 
-  localStorage.setItem('car_ny_21', tripValue);
-  console.log(tripValue);
-</script>
+    localStorage.setItem('trip3', tripValue);
+    console.log(tripValue);
+  </script>
 
 </body>
 

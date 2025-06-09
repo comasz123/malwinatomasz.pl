@@ -87,7 +87,7 @@
                 <h3 class="text-start">Wycieczka samochodem z Krakowa do 
                   <a href="cities/przemysl_21.html">Przemyśla,</a></h3>
                 <h3 class="text-start"><a href="cities/zamosc_21.html">Zamościa</a> oraz <a href="cities/krasiczyn_21.html">Krasiczyna</a></h3>
-                  <h3 class="text-start" id="trip3">razem jakieś 710 km</h3>
+                  <h3 class="text-start" id="car_pl_21">razem jakieś 710 km</h3>
               </div>
             </div>
           </div>
@@ -143,7 +143,7 @@
     const match = tripText.match(/([\d,]+)/);
     const tripValue = match ? parseInt(match[1].replace(/,/g, '')) : 0;
 
-    localStorage.setItem('trip3', tripValue);
+    localStorage.setItem('car_pl_21', tripValue);
     console.log(tripValue);
   </script>
 
