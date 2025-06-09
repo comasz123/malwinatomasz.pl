@@ -49,7 +49,7 @@
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <a href="../../index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/logo_round.png" alt="">
+        <img src="../../assets/img/logo_round.png" alt="">
         <h1 class="sitename">Malwina&Tomasz</h1>
       </a>
 
@@ -149,6 +149,7 @@
           document.getElementById('carNy21').innerText.replace(/\D/g, ''),
           10
   );
+  localStorage.setItem('carNy21', JSON.stringify(carNy21));
   console.log(carNy21);
 
   // const tripText = document.getElementById('carNy21').textContent;
