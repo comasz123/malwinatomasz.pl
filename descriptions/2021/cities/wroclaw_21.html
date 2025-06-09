@@ -78,7 +78,7 @@
         <span class="description-title">Wrocław, Polska</span>
         <h1>Wrocław, Polska</h1>
         <p>Urodziny we Wrocławiu - 2021</p>
-        <p id="car_wr_21">Kraków - Wrocław - Kraków: około 550 km</p>
+        <p id="carWr21">Kraków - Wrocław - Kraków: około 550 km</p>
       </div><!-- End Section Title -->
 
     </section><!-- /Starter Section  -->
@@ -230,12 +230,14 @@
   <script src="../../../assets/js/main.js"></script>
 
   <script>
-    const tripText = document.getElementById('trip4').textContent;
-    const match = tripText.match(/([\d,]+)/);
-    const tripValue = match ? parseInt(match[1].replace(/,/g, '')) : 0;
 
-    localStorage.setItem('car_wr_21', tripValue);
-    console.log(tripValue);
+    const carWr21 = parseInt(
+            document.getElementById('carWr21').innerText.replace(/\D/g, ''),
+            10
+    );
+    localStorage.setItem('carWr21', JSON.stringify(carWr21));
+    localStorage.setItem('carWr21', JSON.stringify(carWr21));
+    console.log(carWr21);
   </script>
 
 </body>
