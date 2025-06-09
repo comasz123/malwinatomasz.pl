@@ -1,10 +1,4 @@
 
-let carTotal=0;
-carTotal=carTotal21+carTotal22;
-const flightTotal=totalFlight22;
-
-console.log('flight='+flightTotal);
-console.log('car='+carTotal);
 
 // 2022
 const car22_1 = parseInt(localStorage.getItem('carNv22')) || 0;
@@ -22,3 +16,10 @@ const car21_2 = parseInt(localStorage.getItem('carIt21')) || 0;
 const car21_3 = parseInt(localStorage.getItem('carNy21')) || 0;
 const car21_4 = parseInt(localStorage.getItem('carPl21')) || 0;
 const carTotal21 = car21_1 + car21_2 + car21_3 + car21_4;
+
+
+const carTotal=carTotal21+carTotal22;
+const flightTotal=totalFlight22;
+
+console.log('flight='+flightTotal);
+console.log('car='+carTotal);
