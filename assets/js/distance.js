@@ -1,5 +1,6 @@
 
-const carTotal=carTotal21+carTotal22;
+let carTotal=0;
+carTotal=carTotal21+carTotal22;
 const flightTotal=totalFlight22;
 
 console.log('flight='+flightTotal);
