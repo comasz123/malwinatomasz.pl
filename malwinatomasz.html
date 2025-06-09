@@ -253,7 +253,8 @@
 <!--  <script src="./assets/js/distance.js"></script>-->
 
 <script>
-  const car21_1 = parseInt(localStorage.getItem("carWr21"));
+  const car21_1 = parseInt(localStorage.getItem("carWr21")) || 0;
+  console.log(car21_1);
   const car21_2 = parseInt(localStorage.getItem('carIt21')) || 0;
   const car21_3 = parseInt(localStorage.getItem('carNy21')) || 0;
   const car21_4 = parseInt(localStorage.getItem('carPlr_21')) || 0;
