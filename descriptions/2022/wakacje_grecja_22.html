@@ -90,7 +90,7 @@
                   <a href="./cities/subotica_22.html">Subotica</a> - 
                   <a href="./cities/skopje_22.html">Skopje</a> - 
                   <a href="./cities/thasos_22.html">Thasos</a> - Pireus - Belgrade - Kraków</h3>
-                <h3 class="text-start" id="car_gr">razem około 4,500 km</h3>
+                <h3 class="text-start" id="carGr22">razem około 4,500 km</h3>
                 <br/>
                 <h3 class="text-start"><a href="./cities/lodka_22.html">łódką w okolicach Pireusu</a>, 
                 <a href="./cities/napflio_22.html">Napflio,</a></h3>
@@ -147,12 +147,15 @@
   <script src="../../assets/js/main.js"></script>
 
   <script>
-    const tripText = document.getElementById('trip3').textContent;
-    const match = tripText.match(/([\d,]+)/);
-    const tripValue = match ? parseInt(match[1].replace(/,/g, '')) : 0;
+    
+    const carGr22 = parseInt(
+            document.getElementById('carNv22').innerText.replace(/\D/g, ''),
+            10
+    );
+    localStorage.setItem('carGr22', JSON.stringify(carGr22));
+    localStorage.setItem('carGr22', JSON.stringify(carGr22));
+    console.log('car='+carGr22);
 
-    localStorage.setItem('trip3', tripValue);
-    console.log(tripValue);
   </script>
 
 </body>

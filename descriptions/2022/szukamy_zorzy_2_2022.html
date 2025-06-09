@@ -86,7 +86,7 @@
 
               <div class="col-lg-7">
                 <h3 class="text-start">Samolotem Kraków-Oslo-Narwik-Oslo-Kraków</h3>
-                <h3 class="text-start" id="flight_nw">razem około 3,000 km</h3>
+                <h3 class="text-start" id="flightNv21">razem około 3,000 km</h3>
                 <h3 class="text-start"> <a href="./cities/oslo_22.html">Oslo</a>,
                   <a href="./cities/n_islands_22.html">wyspy</a> w okolicach Narwiku, <a href="./cities/kiruna_22.html">Kiruna,</a>
                   <a href="./cities/ice_hotel_22.html">Ice Hotel</a></h3>
@@ -95,7 +95,7 @@
               <div class="col-lg-7">
                 <br/>
                 <h3 class="text-start">Wycieczka do Kiruny i Ice Hotel w Szwecji</h3>
-                <h3 class="text-start" id="car_nv">razem około 600 km</h3>
+                <h3 class="text-start" id="carNv22">razem około 600 km</h3>
               </div>
 
               <div class="col-lg-4">
@@ -152,12 +152,24 @@
   <script src="../../assets/js/main.js"></script>
 
   <script>
-    const tripText = document.getElementById('trip3').textContent;
-    const match = tripText.match(/([\d,]+)/);
-    const tripValue = match ? parseInt(match[1].replace(/,/g, '')) : 0;
 
-    localStorage.setItem('trip3', tripValue);
-    console.log(tripValue);
+    const carNv22 = parseInt(
+            document.getElementById('carNv22').innerText.replace(/\D/g, ''),
+            10
+    );
+    localStorage.setItem('carNv22', JSON.stringify(carNv22));
+    localStorage.setItem('carNv22', JSON.stringify(carNv22));
+    console.log('car='+carNv22);
+
+    const flightNv21 = parseInt(
+            document.getElementById('carNv22').innerText.replace(/\D/g, ''),
+            10
+    );
+    localStorage.setItem('flightNv21', JSON.stringify(flightNv21));
+    localStorage.setItem('flightNv21', JSON.stringify(flightNv21));
+    console.log('flight='+flightNv21);
+
+    
   </script>
 
 </body>
