@@ -275,14 +275,6 @@
 
   <!-- Main JS File -->
   <script src="../../../assets/js/main.js"></script>
-  <script>
-    const tripText = document.getElementById('trip1').textContent;
-    const match = tripText.match(/([\d,]+)/);
-    const tripValue = match ? parseInt(match[1].replace(/,/g, '')) : 0;
-
-    localStorage.setItem('trip1', tripValue);
-    console.log(tripValue);
-  </script>
 </body>
 
 </html>
