@@ -24,5 +24,5 @@ const flightTotal=totalFlight22;
 console.log('flight='+flightTotal);
 console.log('car='+carTotal);
 
-document.getElementById("distanceCar").textContent = `razem samochodem = ${carTotal.toLocaleString()}`;
-document.getElementById("distanceFlight").textContent = `razem samolotem = ${flightTotal.toLocaleString()}`;
+document.getElementById("distanceCar").textContent = `razem samochodem = ${carTotal.toLocaleString()} km`;
+document.getElementById("distanceFlight").textContent = `razem samolotem = ${flightTotal.toLocaleString()} km`;
