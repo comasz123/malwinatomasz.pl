@@ -24,4 +24,4 @@ const flightTotal=totalFlight22;
 console.log('flight='+flightTotal);
 console.log('car='+carTotal);
 
-document.getElementById("distanceTotal").textContent = "razem samochodem=" + carTotal;
+document.getElementById("distanceTotal").textContent = `razem = ${carTotal.toLocaleString()}`;
