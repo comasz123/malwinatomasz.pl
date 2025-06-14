@@ -5,7 +5,8 @@ const car22_1 = parseInt(localStorage.getItem('carNv22')) || 0;
 const car22_2 = parseInt(localStorage.getItem('carZz22')) || 0;
 const car22_3 = parseInt(localStorage.getItem('carGr22')) || 0;
 const car22_4 = parseInt(localStorage.getItem('carSl22')) || 0;
-const carTotal22= car22_1 + car22_2 + car22_3 + car22_4;
+const car22_5 = parseInt(localStorage.getItem('carPszcz22')) || 0;
+const carTotal22= car22_1 + car22_2 + car22_3 + car22_4 + car22_5;
 
 const flight22_1 = parseInt(localStorage.getItem('flightZz22')) || 0;
 const flight22_2 = parseInt(localStorage.getItem('flightNv22')) || 0;
