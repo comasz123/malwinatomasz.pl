@@ -7,6 +7,7 @@ const car22_3 = parseInt(localStorage.getItem('carGr22')) || 0;
 const car22_4 = parseInt(localStorage.getItem('carSl22')) || 0;
 const car22_5 = parseInt(localStorage.getItem('carPszcz22')) || 0;
 const car22_6 = parseInt(localStorage.getItem('carPie22')) || 0;
+const car22_7 = parseInt(localStorage.getItem('carMon22')) || 0;
 
 const carTotal22= car22_1 + car22_2 + car22_3 + car22_4 + car22_5 + car22_6;
 
