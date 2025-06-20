@@ -1,4 +1,7 @@
 
+// 2023
+const car23_1 = parseInt(localStorage.getItem('carUSA23')) || 0;
+const carTotal23= car23_1;
 
 // 2022
 const car22_1 = parseInt(localStorage.getItem('carNv22')) || 0;
@@ -8,7 +11,6 @@ const car22_4 = parseInt(localStorage.getItem('carSl22')) || 0;
 const car22_5 = parseInt(localStorage.getItem('carPszcz22')) || 0;
 const car22_6 = parseInt(localStorage.getItem('carPie22')) || 0;
 const car22_7 = parseInt(localStorage.getItem('carMon22')) || 0;
-
 const carTotal22= car22_1 + car22_2 + car22_3 + car22_4 + car22_5 + car22_6 + car22_7;
 
 const flight22_1 = parseInt(localStorage.getItem('flightZz22')) || 0;
@@ -23,7 +25,7 @@ const car21_4 = parseInt(localStorage.getItem('carPl21')) || 0;
 const carTotal21 = car21_1 + car21_2 + car21_3 + car21_4;
 
 
-const carTotal=carTotal21+carTotal22;
+const carTotal=carTotal21+carTotal22+carTotal23;
 const flightTotal=totalFlight22;
 
 console.log('flight='+flightTotal);
