@@ -11,7 +11,9 @@ const car22_4 = parseInt(localStorage.getItem('carSl22')) || 0;
 const car22_5 = parseInt(localStorage.getItem('carPszcz22')) || 0;
 const car22_6 = parseInt(localStorage.getItem('carPie22')) || 0;
 const car22_7 = parseInt(localStorage.getItem('carMon22')) || 0;
-const carTotal22= car22_1 + car22_2 + car22_3 + car22_4 + car22_5 + car22_6 + car22_7;
+const car22_8 = parseInt(localStorage.getItem('carBdn22')) || 0;
+const carTotal22= car22_1 + car22_2 + car22_3 + car22_4 + car22_5 + car22_6 + car22_7 + car22_8;
+console.log('car='+carTotal22);
 
 const flight22_1 = parseInt(localStorage.getItem('flightZz22')) || 0;
 const flight22_2 = parseInt(localStorage.getItem('flightNv22')) || 0;
