@@ -18,6 +18,7 @@ console.log('car='+carTotal22);
 const flight22_1 = parseInt(localStorage.getItem('flightZz22')) || 0;
 const flight22_2 = parseInt(localStorage.getItem('flightNv22')) || 0;
 const totalFlight22 = flight22_1 + flight22_2;
+console.log(flight22_2);
 
 // 2021
 const car21_1 = parseInt(localStorage.getItem('carWr21')) || 0;
