@@ -79,7 +79,7 @@
         <h1>Baden, Austria</h1>
         <p>Majówka 2022</p>
         <p>plus wycieczki do kopalni Hinterbruhl, zamek Heiligenkreuz i pałac </p>
-        <p id="trip1">razem około 1,000 km</p>
+        <p id="carBdn22">razem około 1000 km</p>
       </div><!-- End Section Title -->
 
     </section><!-- /Starter Section  -->
@@ -373,6 +373,17 @@
 
   <!-- Main JS File -->
   <script src="../../../assets/js/main.js"></script>
+
+  <script>
+
+    const carBdn22 = parseInt(
+            document.getElementById('carBdn22').innerText.replace(/\D/g, ''),
+            10
+    );
+    localStorage.setItem('carBdn22', JSON.stringify(carBdn22));
+    console.log('car='+carBdn22);
+
+  </script>
 </body>
 
 </html>
