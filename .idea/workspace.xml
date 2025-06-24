@@ -5,29 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d771cb0-30f6-4535-97ae-22e91f3e5f7a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/descriptions/2021/cities/baden_21.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/descriptions/2021/cities/ferrara_21.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/descriptions/2021/cities/jeleniagora_21.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/descriptions/2021/cities/karpacz_21.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/descriptions/2021/cities/krasiczyn_21.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/descriptions/2021/cities/pilsen_21.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/descriptions/2021/cities/przemysl_21.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/descriptions/2021/cities/rimini_21.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/descriptions/2021/cities/rzym_21.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/descriptions/2021/cities/sanmarino_21.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/descriptions/2021/cities/vienna_21.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/descriptions/2021/cities/wenecja_21.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/descriptions/2021/cities/wroclaw_21.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/descriptions/2021/cities/zamosc_21.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/descriptions/2021/newyear_2021.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/descriptions/2021/wakacje_2021.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/descriptions/2021/wycieczka_na_wschod_2021.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/descriptions/2022/cities/baden_22.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/descriptions/2022/cities/ice_hotel_22.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/descriptions/2022/cities/oslo_22.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/descriptions/2022/szukamy_zorzy_2_2022.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/descriptions/replace.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/descriptions/replace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +13,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/descriptions" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$APPLICATION_HOME_DIR$/lib/app.jar!/resources/html5-schema/html5/common.rnc" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -52,31 +33,52 @@
   &quot;keyToString&quot;: {
     &quot;JavaScript Debug.baden_21.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.baden_22.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.chicago_23.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.coruna_23.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.el_escorial_23.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.ferrara_21.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.fisterra_23.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.hiszpania_23.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.index copy.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.jeleniagora_21.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.karpacz_21.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.keszthely_23.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.kowno_23.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.krasiczyn_21.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.lotwa_23.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.madryt_23.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.malwina.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.malwinatomasz.html (1).executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.malwinatomasz.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.newyear_2021.html (1).executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.newyear_2021.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.oslo_22.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.pampeluna_23.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.pilsen_21.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.portfolio-details.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.przemysl_21.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.rimini_21.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.rundale_23.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.rzym_21.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.san_sebastian_23.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.sanmarino_21.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.santiago_de_compostela_23.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.saragossa_23.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.starter-page.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.szukamy_zorzy_2_2022.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.tomasz.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.valle_delos_caidos_23.html.executor&quot;: &quot;Debug&quot;,
     &quot;JavaScript Debug.vienna.html (1).executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.vienna.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.wakacje_2021.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.wakacje_usa_23.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.wenecja_21.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.werona_21.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.wroclaw_21.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.wybrzeze_23.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.wycieczka_na_wschod_2021.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.wzgorze_krzyzy_23.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.zamosc_21.html.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -89,29 +91,29 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
-    <configuration name="baden_22.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/malwinatomasz2/descriptions/2022/cities/baden_22.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.werona_21.html">
+    <configuration name="kowno_23.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/malwinatomasz/descriptions/2023/cities/kowno_23.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/malwinatomasz/index.html" useBuiltInWebServerPort="true">
+    <configuration name="rundale_23.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/malwinatomasz/descriptions/2023/cities/rundale_23.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="malwinatomasz.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/malwinatomasz2/malwinatomasz.html" useBuiltInWebServerPort="true">
+    <configuration name="werona_21.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/malwinatomasz/descriptions/2021/cities/werona_21.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="oslo_22.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/malwinatomasz2/descriptions/2022/cities/oslo_22.html" useBuiltInWebServerPort="true">
+    <configuration name="wybrzeze_23.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/malwinatomasz/descriptions/2023/cities/wybrzeze_23.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="szukamy_zorzy_2_2022.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/malwinatomasz2/descriptions/2022/szukamy_zorzy_2_2022.html" useBuiltInWebServerPort="true">
+    <configuration name="wzgorze_krzyzy_23.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/malwinatomasz/descriptions/2023/cities/wzgorze_krzyzy_23.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index.html" />
-        <item itemvalue="JavaScript Debug.szukamy_zorzy_2_2022.html" />
-        <item itemvalue="JavaScript Debug.oslo_22.html" />
-        <item itemvalue="JavaScript Debug.malwinatomasz.html" />
-        <item itemvalue="JavaScript Debug.baden_22.html" />
+        <item itemvalue="JavaScript Debug.werona_21.html" />
+        <item itemvalue="JavaScript Debug.wybrzeze_23.html" />
+        <item itemvalue="JavaScript Debug.wzgorze_krzyzy_23.html" />
+        <item itemvalue="JavaScript Debug.rundale_23.html" />
+        <item itemvalue="JavaScript Debug.kowno_23.html" />
       </list>
     </recent_temporary>
   </component>
@@ -132,6 +134,8 @@
       <workItem from="1748754957149" duration="7826000" />
       <workItem from="1748787298678" duration="290000" />
       <workItem from="1749031696705" duration="53915000" />
+      <workItem from="1749574712026" duration="92628000" />
+      <workItem from="1752069234880" duration="1740000" />
     </task>
     <servers />
   </component>
