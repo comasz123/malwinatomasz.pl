@@ -3,7 +3,8 @@
 const car23_1 = parseInt(localStorage.getItem('carUSA23')) || 0;
 const car23_2 = parseInt(localStorage.getItem('carHisz23')) || 0;
 const car23_3 = parseInt(localStorage.getItem('carHev23')) || 0;
-const carTotal23= car23_1 + car23_2 + car23_3;
+const car23_4 = parseInt(localStorage.getItem('carLot23')) || 0;
+const carTotal23= car23_1 + car23_2 + car23_3 + car23_4;
 
 const flight23_1 = parseInt(localStorage.getItem('flightUSA23')) || 0;
 const flight23_2 = parseInt(localStorage.getItem('flightHisz23')) || 0;
