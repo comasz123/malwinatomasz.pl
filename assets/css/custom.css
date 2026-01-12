@@ -9,3 +9,14 @@
 body {
     padding-top: 80px;
 }
+/* Większe menu w headerze */
+#site-header .nav-link {
+    font-size: 1.8rem;   /* było ~1rem, to jest +25% */
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#site-header .navbar-brand span {
+    font-size: 2rem;    /* napis Malwina & Tomasz */
+}
+
