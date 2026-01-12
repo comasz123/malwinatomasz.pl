@@ -22,3 +22,13 @@ body {
 #site-header .navbar-brand span {
     font-size: 2rem !important;
 }
+/* Kolor aktywnej pozycji menu */
+#site-header .nav-link.active {
+    color: #f5c542 !important; /* żółty */
+    font-weight: 600;
+}
+
+/* Hover jak w starym menu */
+#site-header .nav-link:hover {
+    color: #f5c542 !important;
+}
