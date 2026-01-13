@@ -1,3 +1,5 @@
+
+
 #site-header {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -29,7 +31,7 @@ body {
 }
 /* Kolor aktywnej pozycji menu */
 #site-header .nav-link.active {
-    color: #f5c542 !important; /* żółty */
+    color: RGB(255, 187, 39) !important; /* żółty */
     font-weight: 600;
 }
 
