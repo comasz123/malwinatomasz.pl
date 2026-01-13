@@ -308,7 +308,6 @@ h1, h2, h3, h4 {
   padding: 30px 0;
   text-align: center;
   font-size: 14px;
-  background: black;
 }
 
 .footer h3 {
@@ -320,7 +319,10 @@ h1, h2, h3, h4 {
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   padding-top: 20px;
 }
-
+.footer.dark-background {
+  background-color: #121212;
+  color: #e0e0e0;
+}
 /*--------------------------------------------------------------
 # Scroll Top & Preloader
 --------------------------------------------------------------*/
