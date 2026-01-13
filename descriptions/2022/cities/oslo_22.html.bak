@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Oslo'2022 - Malwina&Tomasz podróże po świecie</title>
+  <meta name="description" content="Prywatna strona o podróżach">
+  <meta name="keywords" content="podróże, travel, radość, fun, Baden">
+
+  <!-- Facebook tags -->
+  <meta property="og:title" content="Malwina&Tomasz" />
+  <meta property="og:description" content="Kochamy podróżować i ta strona jest o naszych wyprawach" />
+  <meta property="og:image" content="../../../assets/img/logo_round.png" />
+  <meta property="og:url" content="https://www.malwinatomasz.pl/descriptions/2022/cities/oslo_22.html" />
+  <meta property="og:type" content="website" />
+
+
+  <!-- Favicons -->
+  <link href="../../../assets/img/logo_round_s.ico" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Quicksand:wght@300;400;500;600;700&family=Domine:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../../../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../../../assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Laura
+  * Template URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="starter-page-page">
+
+  <!--#include virtual="/includes/header.html" -->
+
+  <main class="main">
+
+    <!-- Starter Section Section -->
+    <section id="starter-section" class="starter-section section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="description-title">Oslo, Norwegia</span>
+        <h1>Oslo, Norwegia</h1>
+        <p>Nowy Rok 2022</p>
+      </div><!-- End Section Title -->
+
+    </section><!-- /Starter Section  -->
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8538.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8538_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8545.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8545_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8547.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8547_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8558.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8558_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8560.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8560_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8572.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8572_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8574.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8574_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8575.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8575_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8578.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8578_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8583.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8583_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8590.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8590_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8592.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8592_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8593.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8593_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8608.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8608_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8614.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8614_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8620.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8620_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8628.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8628_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8633.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8633_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8640.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8640_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8642.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8642_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8644.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8644_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8654.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8654_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8665.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8665_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8673.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8673_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8676.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8676_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8677.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8677_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8685.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8685_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8694.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8694_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8695.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8695_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8696.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8696_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8697.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8697_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8702.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8702_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8710.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8710_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8712.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8712_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8714.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8714_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8716.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8716_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8718.jpeg" class="glightbox" data-gallery="images-gallery">
+                <img oncontextmenu="return false" src="https://zdjecia.malwinatomasz.pl/trips/2022/norwegia/oslo_22/IMG_8718_s.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+          
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative dark-background">
+    <div class="container">
+      <h3 class="sitename">Malwina&Tomasz strona o podrożach<br></h3>
+
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Malwina&Tomasz</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../../assets/vendor/aos/aos.js"></script>
+<!--  <script src="../../../assets/vendor/swiper/swiper-bundle.min.js"></script>-->
+  <script src="../../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+<!--  <script src="../../../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>-->
+<!--  <script src="../../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>-->
+
+  <!-- Main JS File -->
+  <script src="../../../assets/js/main.js"></script>
+</body>
+
+</html>

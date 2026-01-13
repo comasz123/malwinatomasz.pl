@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Samochodem na Łotwę, 2023 - Malwina&Tomasz podróże po świecie</title>
+  <meta name="description" content="Prywatna strona o podróżach">
+  <meta name="keywords" content="podróże, travel, radość, fun, wakacje, holidays, Hiszpania, Spain">
+
+  <!-- Facebook tags -->
+  <meta property="og:title" content="Malwina&Tomasz" />
+  <meta property="og:description" content="Kochamy podróżować i ta strona jest o naszych wyprawach" />
+  <meta property="og:image" content="../../../assets/img/logo_round.png" />
+  <meta property="og:url" content="https://www.malwinatomasz.pl/descriptions/2023/lotwa.html" />
+  <meta property="og:type" content="website" />
+
+
+  <!-- Favicons -->
+  <link href="../../assets/img/logo_round_s.ico" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Quicksand:wght@300;400;500;600;700&family=Domine:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../../assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Laura
+  * Template URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="starter-page-page">
+
+  <!--#include virtual="/includes/header.html" -->
+
+  <main class="main">
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="description-title">Samochodem na Łotwę, 2023</span>
+        <h2>Samochodem na Łotwę, 2023</h2>
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row gy-4 justify-content-left">
+              <div class="col-lg-4">
+                <img src="../../assets/img/trips_s/2023/lotwa/google_lotwa_23.jpg" class="img-fluid" alt="">
+              </div>
+
+              <div class="col-lg-7">
+                <br/>
+                <h3 class="text-start">Wyjazd samochodem</h3>
+                <h3 class="text-start">
+                  <a href="./cities/kowno_23.html">Kowno</a> -
+                  <a href="./cities/wzgorze_krzyzy_23.html">Wzgórze Krzyży</a> -
+                  <a href="./cities/ryga_23.html">Ryga</a> -
+                  <a href="./cities/kemeri_bog_23.html">Kemeri Bog</a> -
+                  <a href="./cities/wybrzeze_23.html">Wybrzeze Bałtyku</a> -
+                  <a href="./cities/rundale_23.html">Pałac w Rundale</a> -
+                </h3>
+                <h3 class="text-start" id="carLot23">razem około 2100 km</h3>
+                <br/>
+              </div>
+            </div>
+          </div>
+        
+      </div><!-- End Section Title -->
+
+    </section><!-- /Portfolio Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative dark-background">
+    <div class="container">
+      <h3 class="sitename">Malwina&Tomasz strona o podrożach<br></h3>
+
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Malwina&Tomasz</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/aos/aos.js"></script>
+  <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../../assets/js/main.js"></script>
+
+  <script>
+    
+    const carLot23 = parseInt(
+            document.getElementById('carLot23').innerText.replace(/\D/g, ''),
+            10
+    );
+    localStorage.setItem('carLot23', JSON.stringify(carLot23));
+    console.log('car='+carLot23);
+    
+
+  </script>
+
+</body>
+
+</html>
