@@ -353,3 +353,17 @@ h1, h2, h3, h4 {
   background-color: #121212;
   color: #e0e0e0;
 }
+
+/* === FORCE DESKTOP NAV VISIBILITY === */
+@media (min-width: 1200px) {
+  .navmenu {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    position: static !important;
+  }
+
+  .navmenu ul {
+    display: flex !important;
+  }
+}
