@@ -320,9 +320,10 @@ h1, h2, h3, h4 {
   padding-top: 20px;
 }
 .footer.dark-background {
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: var(--background-color);
+  color: var(--default-color);
 }
+
 /*--------------------------------------------------------------
 # Scroll Top & Preloader
 --------------------------------------------------------------*/
@@ -352,3 +353,7 @@ h1, h2, h3, h4 {
   background: var(--background-color);
   z-index: 9999;
 }
+#footer {
+  background-color: var(--background-color);
+}
+
