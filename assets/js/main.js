@@ -1,24 +1,25 @@
 /**
- * Custom main.js – cleaned for malwinatomasz.pl
- * Based on BootstrapMade template, unused code removed
+ * main.js – cleaned & SSI-safe
+ * malwinatomasz.pl
  */
 
 (function () {
   "use strict";
 
+  const body = document.body;
+
   /* --------------------------------------------------
    * Header scrolled state
    * -------------------------------------------------- */
   const header = document.querySelector('#header');
-  const body = document.body;
 
   function toggleScrolled() {
-    if (!header || !header.classList.contains('fixed-top')) return;
+    if (!header) return;
     body.classList.toggle('scrolled', window.scrollY > 100);
   }
 
-  window.addEventListener('scroll', toggleScrolled);
   window.addEventListener('load', toggleScrolled);
+  window.addEventListener('scroll', toggleScrolled);
 
   /* --------------------------------------------------
    * Mobile navigation toggle
@@ -26,6 +27,7 @@
   const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
 
   function toggleMobileNav() {
+    if (!mobileNavToggleBtn) return;
     body.classList.toggle('mobile-nav-active');
     mobileNavToggleBtn.classList.toggle('bi-list');
     mobileNavToggleBtn.classList.toggle('bi-x');
@@ -35,14 +37,17 @@
     mobileNavToggleBtn.addEventListener('click', toggleMobileNav);
   }
 
-  /* Close mobile nav on link click */
-  document.querySelectorAll('#navmenu a').forEach(link => {
-    link.addEventListener('click', () => {
-      if (body.classList.contains('mobile-nav-active')) {
-        toggleMobileNav();
-      }
+  /* Close mobile nav on menu click */
+  const navLinks = document.querySelectorAll('#navmenu a');
+  if (navLinks.length && mobileNavToggleBtn) {
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (body.classList.contains('mobile-nav-active')) {
+          toggleMobileNav();
+        }
+      });
     });
-  });
+  }
 
   /* --------------------------------------------------
    * Preloader
@@ -67,7 +72,10 @@
   if (scrollTopBtn) {
     scrollTopBtn.addEventListener('click', e => {
       e.preventDefault();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     });
   }
 
