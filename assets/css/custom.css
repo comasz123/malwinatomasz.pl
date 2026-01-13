@@ -1,56 +1,87 @@
-/* ================================
+/* =====================================================
    GLOBALNE ZMIENNE
-================================ */
+===================================================== */
 :root {
-    --custom-yellow: rgb(255, 187, 39);
+    --mt-yellow: rgb(255, 187, 39);
+    --mt-header-offset: 24px;
+    --mt-header-height: 120px;
 }
 
-/* ================================
-   HEADER
-================================ */
-#site-header {
-    top: 20px; /* MENU NIŻEJ OD GÓRY STRONY */
-    padding-top: 10px;
-    padding-bottom: 10px;
+/* =====================================================
+   LAYOUT – KOREKTA POD FIXED HEADER
+===================================================== */
+body {
+    padding-top: var(--mt-header-height);
+}
 
+/* =====================================================
+   HEADER (NAKŁADKA NA BOOTSTRAP)
+===================================================== */
+.mt-header {
+    top: var(--mt-header-offset);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-#site-header.scrolled {
+.mt-header.is-scrolled {
     background-color: rgba(0, 0, 0, 0.75);
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
-/* odsunięcie treści pod fixed header */
-body {
-    padding-top: 140px;
+/* =====================================================
+   BRAND / LOGO
+===================================================== */
+.mt-header .navbar-brand span {
+    font-size: 2.1rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
 }
 
-/* ================================
-   MENU – WYGLĄD
-================================ */
-#site-header .navbar-nav .nav-link {
+/* =====================================================
+   MENU – NOWY STYL (NIE DOTYKA STAREGO CSS)
+===================================================== */
+
+/* kontener menu */
+.mt-nav {
+    align-items: center;
+}
+
+/* link menu */
+.mt-nav .mt-menu-link {
     text-transform: uppercase;
-    font-size: 1.8rem;          /* WIĘKSZE LITERY */
+    font-size: 1.8rem;              /* DUŻE LITERY */
     letter-spacing: 0.1em;
     font-weight: 500;
-    color: #ffffff;
+
+    color: #ffffff !important;
+    text-decoration: none;
+
+    transition: color 0.2s ease;
 }
 
-/* HOVER */
-#site-header .navbar-nav .nav-link:hover {
-    color: var(--custom-yellow);
+/* hover */
+.mt-nav .mt-menu-link:hover {
+    color: var(--mt-yellow) !important;
 }
 
-/* ACTIVE */
-#site-header .navbar-nav .nav-link.active {
-    color: var(--custom-yellow);
+/* active */
+.mt-nav .mt-menu-active {
+    color: var(--mt-yellow) !important;
     font-weight: 600;
 }
 
-/* ================================
-   LOGO
-================================ */
-#site-header .navbar-brand span {
-    font-size: 2.1rem;
+/* =====================================================
+   OFFCANVAS (MOBILE MENU)
+===================================================== */
+.offcanvas .mt-menu-link {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+/* =====================================================
+   DROBNE KOREKTY BOOTSTRAPA (BEZ EFEKTÓW UBOCZNYCH)
+===================================================== */
+
+/* usuń underline jeśli stary CSS go dodaje */
+.mt-menu-link::after {
+    display: none !important;
 }
