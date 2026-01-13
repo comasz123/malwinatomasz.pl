@@ -319,10 +319,6 @@ h1, h2, h3, h4 {
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   padding-top: 20px;
 }
-.footer.dark-background {
-  background-color: var(--background-color);
-  color: var(--default-color);
-}
 
 /*--------------------------------------------------------------
 # Scroll Top & Preloader
@@ -354,5 +350,6 @@ h1, h2, h3, h4 {
   z-index: 9999;
 }
 #footer {
-  background: red !important;
+  background-color: #121212;
+  color: #e0e0e0;
 }
