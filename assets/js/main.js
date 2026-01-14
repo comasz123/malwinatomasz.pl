@@ -24,6 +24,15 @@
   /* --------------------------------------------------
    * Mobile navigation toggle
    * -------------------------------------------------- */
+
+  const mobileToggle = document.querySelector('.mobile-nav-toggle');
+
+  if (mobileToggle) {
+    mobileToggle.addEventListener('click', () => {
+      document.body.classList.toggle('mobile-nav-open');
+    });
+  }
+  
   const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
 
   function toggleMobileNav() {
