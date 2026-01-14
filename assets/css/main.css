@@ -330,21 +330,21 @@ body {
 }
 
 /*--------------------------------------------------------------
-# Resume Section
+# timeLine Section
 --------------------------------------------------------------*/
-.resume .resume-title {
+.timeLine .timeLine-title {
   font-size: 26px;
   font-weight: 700;
   margin: 20px 0;
 }
 
-.resume .resume-item {
+.timeLine .timeLine-item {
   position: relative;
   padding: 0 0 20px 20px;
   border-left: 2px solid var(--accent-color);
 }
 
-.resume .resume-item::before {
+.timeLine .timeLine-item::before {
   content: "";
   position: absolute;
   left: -9px;
@@ -356,12 +356,12 @@ body {
   border: 2px solid var(--accent-color);
 }
 
-.resume .resume-item h4 {
+.timeLine .timeLine-item h4 {
   font-size: 18px;
   font-weight: 600;
 }
 
-.resume .resume-item h5 {
+.timeLine .timeLine-item h5 {
   font-size: 15px;
   margin-bottom: 10px;
 }
@@ -452,15 +452,28 @@ body {
 }
 /* ===== TIMELINE LAYOUT ===== */
 
-.resume .resume-item .row {
+.timeLine .timeLine-item .row {
   margin-left: 0;
   margin-right: 0;
 }
-
+/* Domyślny tytuł (bez linku) */
 .trip-title {
+  color: #8a8a8a;
   margin: 0;
   font-size: 18px;
   font-weight: 600;
+}
+
+/* Jeśli tytuł ZAWIERA link */
+.trip-title a {
+  color: #222;          /* prawie czarny */
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.trip-title a:hover {
+  color: #000;
+  text-decoration: underline;
 }
 /* Domyślny tekst (nieklikany) */
 .trip-cities {
