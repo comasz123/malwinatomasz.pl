@@ -1,79 +1,86 @@
-/* =========================================================
-   GLOBAL VARIABLES
-   ========================================================= */
-:root {
-  --font-base: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-  --font-heading: "Domine", serif;
-  --font-nav: "Quicksand", sans-serif;
+/* Extracted CSS: only selectors used in index.html */
 
-  --color-bg: #ffffff;
-  --color-text: #444444;
-  --color-heading: #3b434a;
-  --color-accent: #ffbb27;
-  --color-dark: #121212;
-  --color-light: #f9f9f9;
-  --color-border: #e5e5e5;
+/*--------------------------------------------------------------
+# Font & Color Variables
+--------------------------------------------------------------*/
+:root {
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --heading-font: "Domine", sans-serif;
+  --nav-font: "Quicksand", sans-serif;
+
+  --background-color: #ffffff;
+  --default-color: #444444;
+  --heading-color: #3b434a;
+  --accent-color: #ffbb27;
+  --surface-color: #ffffff;
+  --contrast-color: #000000;
+
+  --nav-color: #ffffff;
+  --nav-hover-color: #ffbb27;
+  --nav-mobile-background-color: #ffffff;
+  --nav-dropdown-background-color: #ffffff;
+  --nav-dropdown-color: #444444;
+  --nav-dropdown-hover-color: #ffbb27;
 
   scroll-behavior: smooth;
 }
 
-/* =========================================================
-   RESET / BASE
-   ========================================================= */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+.light-background {
+  --background-color: #f9f9f9;
+  --surface-color: #ffffff;
 }
 
+.dark-background {
+  --background-color: #060606;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #252525;
+  --contrast-color: #ffffff;
+}
+
+/*--------------------------------------------------------------
+# Base Elements
+--------------------------------------------------------------*/
 body {
-  margin: 0;
-  font-family: var(--font-base);
-  color: var(--color-text);
-  background-color: var(--color-bg);
-}
-
-img {
-  max-width: 100%;
-  display: block;
+  font-family: var(--default-font);
+  color: var(--default-color);
+  background: var(--background-color);
 }
 
 a {
-  color: var(--color-accent);
+  color: var(--accent-color);
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: 0.3s;
 }
 
 a:hover {
-  color: #e6a800;
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
 h1, h2, h3, h4 {
-  font-family: var(--font-heading);
-  color: var(--color-heading);
-  margin-top: 0;
+  font-family: var(--heading-font);
+  color: var(--heading-color);
 }
+/* =====================================================
+   # Header & Navigation
+   ===================================================== */
 
-/* =========================================================
-   HEADER & NAVIGATION
-   ========================================================= */
+/* HEADER */
 #header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 80px;
-  background-color: var(--color-bg);
-  border-bottom: 1px solid var(--color-border);
+  background-color: #ffffff;
   z-index: 1000;
+  border-bottom: 1px solid #e5e5e5;
 }
 
+/* CONTENT */
 #header .container-fluid {
   height: 100%;
   padding: 0 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 /* LOGO */
@@ -81,24 +88,28 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   gap: 10px;
+  text-decoration: none;
 }
 
 #header .logo img {
-  height: 40px;
+  height: 42px;
+  width: auto;
 }
 
-#header .logo h1 {
+#header .logo .sitename {
   font-size: 22px;
-  margin: 0;
   font-weight: 700;
+  color: #222;
+  margin: 0;
 }
 
-/* NAV */
+/* NAV WRAPPER */
 #navmenu {
   display: flex;
   align-items: center;
 }
 
+/* DESKTOP MENU */
 #navmenu ul {
   list-style: none;
   display: flex;
@@ -107,26 +118,36 @@ h1, h2, h3, h4 {
   padding: 0;
 }
 
+#navmenu li {
+  position: relative;
+}
+
 #navmenu a {
-  font-family: var(--font-nav);
+  display: inline-block;
+  padding: 8px 0;
   font-size: 15px;
   font-weight: 600;
-  text-transform: uppercase;
-  color: var(--color-heading);
+  color: #222;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 #navmenu a:hover {
-  color: var(--color-accent);
+  color: #f5a623;
 }
 
 /* MOBILE TOGGLE */
 .mobile-nav-toggle {
   display: none;
-  font-size: 28px;
+  font-size: 30px;
   cursor: pointer;
+  color: #222;
+  margin-left: 16px;
 }
 
-/* MOBILE */
+/* =====================================================
+   MOBILE
+   ===================================================== */
 @media (max-width: 1199px) {
 
   .mobile-nav-toggle {
@@ -138,9 +159,9 @@ h1, h2, h3, h4 {
     top: 80px;
     left: 0;
     width: 100%;
-    background: var(--color-bg);
     flex-direction: column;
-    border-top: 1px solid var(--color-border);
+    background-color: #ffffff;
+    border-top: 1px solid #e5e5e5;
     display: none;
   }
 
@@ -150,42 +171,57 @@ h1, h2, h3, h4 {
 
   #navmenu li {
     padding: 16px 24px;
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  #navmenu a {
+    width: 100%;
   }
 }
 
-/* OFFSET */
+/* BODY OFFSET FOR FIXED HEADER */
 body {
   padding-top: 80px;
 }
 
-/* =========================================================
-   SECTIONS
-   ========================================================= */
+
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
 .section {
   padding: 60px 0;
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .section-title h2 {
   font-size: 32px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
-/* =========================================================
-   HERO
-   ========================================================= */
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
 .hero {
   min-height: 100vh;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   padding: 120px 0 60px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  z-index: 1;
 }
 
 .hero img {
@@ -194,80 +230,159 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255,255,255,0.7);
+  z-index: 0;
 }
 
 .hero .container {
   position: relative;
-  z-index: 1;
-  text-align: center;
+  z-index: 2;
 }
 
 .hero h2 {
   font-size: 36px;
+  font-weight: 700;
 }
 
 .hero p {
   font-size: 16px;
+  letter-spacing: 1px;
 }
 
-/* =========================================================
-   CONTENT SECTIONS (ABOUT / RESUME / ETC)
-   ========================================================= */
-.about ul,
-.resume ul {
+.hero .btn-scroll {
+  display: inline-block;
+  margin-top: 30px;
+  color: color-mix(in srgb, var(--default-color), transparent 60%);
+  animation: btn-up-down 1s ease-in-out infinite alternate;
+}
+
+@keyframes btn-up-down {
+  from { transform: translateY(5px); }
+  to { transform: translateY(-5px); }
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about .content h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.about .content ul {
   list-style: none;
   padding: 0;
 }
 
+.about .content ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.about .content ul i {
+  color: var(--accent-color);
+  margin-right: 6px;
+}
+
+/*--------------------------------------------------------------
+# Resume Section
+--------------------------------------------------------------*/
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
 .resume .resume-item {
-  border-left: 2px solid var(--color-accent);
-  padding-left: 20px;
-  margin-bottom: 20px;
+  position: relative;
+  padding: 0 0 20px 20px;
+  border-left: 2px solid var(--accent-color);
 }
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
-#footer {
-  background-color: var(--color-dark);
-  color: #e0e0e0;
-  padding: 40px 0;
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--background-color);
+  border: 2px solid var(--accent-color);
+}
+
+.resume .resume-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.resume .resume-item h5 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+/*--------------------------------------------------------------
+# Portfolio Section
+--------------------------------------------------------------*/
+.portfolio .portfolio-content {
+  position: relative;
+  overflow: hidden;
+}
+
+/*--------------------------------------------------------------
+# Gallery Section
+--------------------------------------------------------------*/
+.gallery .gallery-item {
+  overflow: hidden;
+  border-right: 3px solid var(--background-color);
+  border-bottom: 3px solid var(--background-color);
+}
+
+.gallery .gallery-item img {
+  transition: transform 0.4s ease;
+}
+
+.gallery .gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
+# Starter Section
+--------------------------------------------------------------*/
+.starter-section {
+  padding: 60px 0;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+  padding: 30px 0;
   text-align: center;
+  font-size: 14px;
 }
 
-#footer h3 {
-  color: #ffffff;
-  font-size: 28px;
+.footer h3 {
+  font-size: 36px;
+  font-weight: 700;
 }
 
-#footer a {
-  color: var(--color-accent);
-}
-
-#footer .copyright {
-  margin-top: 20px;
-  border-top: 1px solid rgba(255,255,255,0.2);
+.footer .copyright {
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   padding-top: 20px;
 }
 
-/* =========================================================
-   SCROLL TOP
-   ========================================================= */
+/*--------------------------------------------------------------
+# Scroll Top & Preloader
+--------------------------------------------------------------*/
 .scroll-top {
   position: fixed;
   right: 15px;
   bottom: 15px;
   width: 44px;
   height: 44px;
-  background: var(--color-accent);
   border-radius: 50%;
+  background: var(--accent-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -280,12 +395,13 @@ body {
   visibility: visible;
 }
 
-/* =========================================================
-   PRELOADER
-   ========================================================= */
 #preloader {
   position: fixed;
   inset: 0;
-  background: var(--color-bg);
+  background: var(--background-color);
   z-index: 9999;
+}
+#footer {
+  background-color: #121212;
+  color: #e0e0e0;
 }
