@@ -355,15 +355,23 @@ h1, h2, h3, h4 {
 }
 
 /* === FORCE DESKTOP NAV VISIBILITY === */
+/* === FORCE DESKTOP NAV MENU === */
 @media (min-width: 1200px) {
-  .navmenu {
-    opacity: 1 !important;
-    visibility: visible !important;
-    pointer-events: auto !important;
+  #navmenu {
+    display: flex !important;
     position: static !important;
+    height: auto !important;
+    overflow: visible !important;
+    background: none !important;
   }
 
-  .navmenu ul {
+  #navmenu ul {
     display: flex !important;
+    flex-direction: row !important;
+    gap: 20px;
+  }
+
+  #navmenu li {
+    position: relative;
   }
 }
