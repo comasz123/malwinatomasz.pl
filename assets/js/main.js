@@ -1,5 +1,5 @@
 /**
- * main.js – cleaned & SSI-safe
+ * main.js – clean, stable, SSI-safe
  * malwinatomasz.pl
  */
 
@@ -22,14 +22,15 @@
   window.addEventListener('scroll', toggleScrolled);
 
   /* --------------------------------------------------
-   * Mobile navigation toggle
+   * Mobile navigation
    * -------------------------------------------------- */
-  
   const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+  const navLinks = document.querySelectorAll('#navmenu a');
 
   function toggleMobileNav() {
     if (!mobileNavToggleBtn) return;
-    body.classList.toggle('mobile-nav-active');
+
+    body.classList.toggle('mobile-nav-open');
     mobileNavToggleBtn.classList.toggle('bi-list');
     mobileNavToggleBtn.classList.toggle('bi-x');
   }
@@ -38,17 +39,27 @@
     mobileNavToggleBtn.addEventListener('click', toggleMobileNav);
   }
 
-  /* Close mobile nav on menu click */
-  const navLinks = document.querySelectorAll('#navmenu a');
+  /* Close mobile nav on link click */
   if (navLinks.length && mobileNavToggleBtn) {
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
-        if (body.classList.contains('mobile-nav-active')) {
+        if (body.classList.contains('mobile-nav-open')) {
           toggleMobileNav();
         }
       });
     });
   }
+
+  /* Close mobile nav on resize to desktop */
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 1200 && body.classList.contains('mobile-nav-open')) {
+      body.classList.remove('mobile-nav-open');
+      if (mobileNavToggleBtn) {
+        mobileNavToggleBtn.classList.add('bi-list');
+        mobileNavToggleBtn.classList.remove('bi-x');
+      }
+    }
+  });
 
   /* --------------------------------------------------
    * Preloader
