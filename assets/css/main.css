@@ -450,3 +450,59 @@ body {
   background-color: #121212;
   color: #e0e0e0;
 }
+/* ===== DESKTOP TIMELINE LAYOUT ===== */
+@media (min-width: 992px) {
+
+  .resume .resume-item {
+    display: grid;
+    grid-template-columns: 260px 1fr 2fr;
+    column-gap: 24px;
+    align-items: center;
+
+    padding-left: 40px; /* odsunięcie od linii czasu */
+  }
+
+  /* Nazwa podróży */
+  .resume .resume-item .trip-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  /* Miasta */
+  .resume .resume-item .trip-cities {
+    margin: 0;
+    font-size: 15px;
+    color: #666;
+  }
+
+  /* Rok */
+  .resume .resume-title {
+    margin-bottom: 8px;
+    margin-top: 40px;
+    font-size: 28px;
+  }
+}
+/* ===== TABLET TIMELINE LAYOUT ===== */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  .resume .resume-item {
+    display: grid;
+    grid-template-columns: 1fr; /* jedna kolumna */
+    row-gap: 6px;
+    padding-left: 40px;
+  }
+
+  .resume .resume-item .trip-title {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .resume .resume-item .trip-cities {
+    font-size: 15px;
+    color: #666;
+    margin: 0;
+  }
+}
+
