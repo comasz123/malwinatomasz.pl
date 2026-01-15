@@ -57,6 +57,10 @@ h1, h2, h3, h4, h5 {
     background-color: transparent;
     transition: background-color .3s ease, height .3s ease, box-shadow .3s ease;
 }
+.site-header a,
+.site-header .sitename {
+    color: #fff;
+}
 
 .scrolled .site-header {
     background-color: rgba(250, 249, 246, 0.95);
@@ -190,7 +194,7 @@ h1, h2, h3, h4, h5 {
     content: "";
     position: absolute;
     inset: 0;
-    background: color-mix(in srgb, var(--background-color), transparent 30%);
+    background: rgba(0, 0, 0, 0.45);
     z-index: 1;
 }
 
