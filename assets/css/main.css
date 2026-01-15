@@ -88,10 +88,11 @@ h1, h2, h3, h4, h5 {
 .site-logo img {
     max-height: 36px;
 }
-
 .site-logo .sitename {
+    font-family: var(--heading-font);
     font-size: 30px;
     font-weight: 700;
+    line-height: 1;
     color: var(--heading-color);
 }
 /* =====================================================
@@ -194,7 +195,7 @@ h1, h2, h3, h4, h5 {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
@@ -216,6 +217,12 @@ h1, h2, h3, h4, h5 {
     font-size: 36px;
     font-weight: 700;
 }
+.hero h1,
+.hero h2,
+.hero p {
+    color: #fff;
+}
+
 
 .hero p {
     font-size: 16px;
