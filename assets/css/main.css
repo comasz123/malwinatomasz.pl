@@ -370,8 +370,8 @@ h1, h2, h3, h4, h5 {
     position: fixed;
     right: 15px;
     bottom: 15px;
-    width: 44px;
-    height: 44px;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
     background: var(--accent-color);
     display: flex;
@@ -379,6 +379,9 @@ h1, h2, h3, h4, h5 {
     justify-content: center;
     opacity: 0;
     visibility: hidden;
+}
+.scroll-top i {
+    font-size: 48px;
 }
 
 .scroll-top.active {
