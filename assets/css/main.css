@@ -44,6 +44,36 @@ h1, h2, h3, h4, h5 {
     margin-top: 0;
 }
 
+/* =====================================================
+   HEADER (layout + behavior only)
+   ===================================================== */
+
+.site-header {
+    --background-color: rgba(0, 0, 0, 0);
+    --default-color: #ffffff;
+    --heading-color: #ffffff;
+
+    position: fixed;
+    top: 0;
+    inset-inline: 0;
+    z-index: 997;
+    min-height: 80px;
+
+    padding: 20px 0;
+    color: var(--default-color);
+    background-color: var(--background-color);
+    transition: all 0.5s;
+}
+
+.site-header .container-fluid {
+    height: 100%;
+    padding-inline: 40px;
+}
+.scrolled .site-header {
+    --background-color: rgba(0, 0, 0, 0.8);
+    padding: 12px 0;
+    box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+}
 
 /* =====================================================
    LOGO
@@ -56,16 +86,14 @@ h1, h2, h3, h4, h5 {
 }
 
 .site-logo img {
-    height: 56px;
-    width: auto;
+    max-height: 36px;
 }
 
 .site-logo .sitename {
     font-size: 30px;
     font-weight: 700;
-    white-space: nowrap;
+    color: var(--heading-color);
 }
-
 /* =====================================================
    NAVIGATION
    ===================================================== */
@@ -84,16 +112,16 @@ h1, h2, h3, h4, h5 {
 }
 
 .site-nav a {
-    position: relative;
+    color: var(--default-color);
+    text-transform: uppercase;
+    font-size: 23px;
     font-family: var(--nav-font);
-    font-size: 18px;
-    font-weight: 600;
-    padding: 8px 0;
+    font-weight: 400;
 }
 
 .site-nav a::after {
     content: "";
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: -6px;
     width: 0;
@@ -102,8 +130,8 @@ h1, h2, h3, h4, h5 {
     transition: width .3s ease;
 }
 
-.site-nav a:hover::after {
-    width: 100%;
+.site-nav a:hover {
+    color: var(--accent-color);
 }
 
 /* =====================================================
