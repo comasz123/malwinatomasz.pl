@@ -8,7 +8,7 @@
   --heading-font: "Domine", sans-serif;
   --nav-font: "Quicksand", sans-serif;
 
-  --background-color: #ffffff;
+  --background-color: #FAF9F6;
   --default-color: #444444;
   --heading-color: #3b434a;
   --accent-color: #ffbb27;
@@ -45,10 +45,11 @@ body {
   font-family: var(--default-font);
   color: var(--default-color);
   background: var(--background-color);
+  padding-top: 110px; /* OFFSET POD WIĘKSZY HEADER */
 }
 
 a {
-  color: var(--accent-color);
+  color: inherit;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -71,8 +72,8 @@ h1, h2, h3, h4 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px;
-  background-color: #ffffff;
+  height: 110px;
+  background-color: var(--background-color); /* KOLOR TŁA STRONY */
   z-index: 1000;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -80,26 +81,30 @@ h1, h2, h3, h4 {
 /* CONTENT */
 #header .container-fluid {
   height: 100%;
-  padding: 0 24px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* LOGO */
 #header .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   text-decoration: none;
 }
 
 #header .logo img {
-  height: 42px;
+  height: 56px;
   width: auto;
 }
 
 #header .logo .sitename {
-  font-size: 22px;
+  font-family: var(--heading-font);
+  font-size: 30px; /* WIĘKSZY TEKST */
   font-weight: 700;
-  color: #222;
+  color: var(--heading-color);
   margin: 0;
 }
 
@@ -113,7 +118,7 @@ h1, h2, h3, h4 {
 #navmenu ul {
   list-style: none;
   display: flex;
-  gap: 24px;
+  gap: 32px;
   margin: 0;
   padding: 0;
 }
@@ -125,24 +130,27 @@ h1, h2, h3, h4 {
 #navmenu a {
   display: inline-block;
   padding: 8px 0;
-  font-size: 15px;
+  font-size: 18px;   /* WIĘKSZE LITERY */
   font-weight: 600;
-  color: #222;
+  color: var(--heading-color);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
-#navmenu a:hover {
-  color: #f5a623;
+/* HOVER */
+#navmenu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
 }
 
-/* MOBILE TOGGLE */
-.mobile-nav-toggle {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  color: #222;
-  margin-left: 16px;
+#navmenu a:hover::after {
+  width: 100%;
 }
 
 /* =====================================================
@@ -185,7 +193,44 @@ body {
 }
 
 
+/*--------------------------------------------------------------
+# MOBILE
+--------------------------------------------------------------*/
+.mobile-nav-toggle {
+  display: none;
+  font-size: 34px;
+  cursor: pointer;
+  color: var(--heading-color);
+}
 
+@media (max-width: 1199px) {
+
+  .mobile-nav-toggle {
+    display: block;
+  }
+  #navmenu ul {
+    position: fixed;
+    top: 110px;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    flex-direction: column;
+    display: none;
+    border-top: 1px solid rgba(0,0,0,0.08);
+  }
+  body.mobile-nav-open #navmenu ul {
+    display: flex;
+  }
+
+  #navmenu li {
+    padding: 18px 32px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+
+  #navmenu a {
+    font-size: 20px; /* JESZCZE WIĘKSZE NA MOBILE */
+  }
+}
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
@@ -285,21 +330,21 @@ body {
 }
 
 /*--------------------------------------------------------------
-# Resume Section
+# timeLine Section
 --------------------------------------------------------------*/
-.resume .resume-title {
+.timeLine .timeLine-title {
   font-size: 26px;
   font-weight: 700;
   margin: 20px 0;
 }
 
-.resume .resume-item {
+.timeLine .timeLine-item {
   position: relative;
   padding: 0 0 20px 20px;
   border-left: 2px solid var(--accent-color);
 }
 
-.resume .resume-item::before {
+.timeLine .timeLine-item::before {
   content: "";
   position: absolute;
   left: -9px;
@@ -311,12 +356,12 @@ body {
   border: 2px solid var(--accent-color);
 }
 
-.resume .resume-item h4 {
+.timeLine .timeLine-item h4 {
   font-size: 18px;
   font-weight: 600;
 }
 
-.resume .resume-item h5 {
+.timeLine .timeLine-item h5 {
   font-size: 15px;
   margin-bottom: 10px;
 }
@@ -405,3 +450,46 @@ body {
   background-color: #121212;
   color: #e0e0e0;
 }
+/* ===== TIMELINE LAYOUT ===== */
+
+.timeLine .timeLine-item .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+/* Domyślny tytuł (bez linku) */
+.trip-title {
+  color: #8a8a8a;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Jeśli tytuł ZAWIERA link */
+.trip-title a {
+  color: #222;          /* prawie czarny */
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.trip-title a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+/* Domyślny tekst (nieklikany) */
+.trip-cities {
+  color: #8a8a8a; /* jasny szary */
+}
+
+/* Tekst, który jest linkiem */
+.trip-cities a {
+  color: #222; /* prawie czarny */
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Hover tylko delikatny */
+.trip-cities a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
