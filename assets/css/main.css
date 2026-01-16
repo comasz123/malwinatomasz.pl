@@ -9,7 +9,7 @@
 
     --background-color: #FAF9F6;
     --surface-color: #ffffff;
-    --default-color: #444444;
+    --default-color: #6c757d;
     --heading-color: #3b434a;
     --accent-color: #ffbb27;
     --contrast-color: #000000;
@@ -29,7 +29,8 @@ body {
 }
 
 a {
-    color: inherit;
+    color: var(--heading-color);
+    font-weight: 500;
     text-decoration: none;
     transition: color .25s ease;
 }
@@ -298,31 +299,67 @@ h1, h2, h3, h4, h5 {
 /* =====================================================
    TIMELINE
    ===================================================== */
+/* =====================================================
+   TIMELINE – POPRAWIONA IMPLEMENTACJA
+   ===================================================== */
 
-.timeLine .timeLine-title {
-    font-size: 26px;
-    font-weight: 700;
-    margin: 20px 0;
-}
-
-.timeLine .timeLine-item {
+.timeline-track {
     position: relative;
-    padding-left: 20px;
-    border-left: 2px solid var(--accent-color);
-    margin-bottom: 20px;
+    padding-left: 60px;
 }
 
-.timeLine .timeLine-item::before {
+/* CIĄGŁA LINIA */
+.timeline-track::before {
     content: "";
     position: absolute;
-    left: -9px;
     top: 0;
-    width: 16px;
-    height: 16px;
+    bottom: 0;
+    left: 28px;
+    width: 2px;
+    background-color: var(--accent-color);
+}
+
+/* ROK */
+.timeLine-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 40px 0 20px;
+}
+
+/* ELEMENT TIMELINE */
+.timeLine-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/* KROPKA */
+.timeline-dot {
+    position: absolute;
+    left: -44px;
+    top: 10px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     background: var(--background-color);
-    border: 2px solid var(--accent-color);
+    border: 3px solid var(--accent-color);
 }
+
+/* MOBILE */
+@media (max-width: 576px) {
+    .timeline-track {
+        padding-left: 40px;
+    }
+
+    .timeline-track::before {
+        left: 18px;
+    }
+
+    .timeline-dot {
+        left: -32px;
+    }
+}
+
+
 
 /* =====================================================
    GALLERY
