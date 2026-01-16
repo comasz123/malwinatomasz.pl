@@ -325,6 +325,12 @@ h1, h2, h3, h4, h5 {
     font-weight: 700;
     margin: 40px 0 20px;
 }
+.year-wrap {
+    display: flex;
+    align-items: center; /* ← exact vertical alignment */
+    gap: 14px;
+    position: relative;
+}
 
 /* ELEMENT TIMELINE */
 .timeLine-item {
@@ -334,14 +340,12 @@ h1, h2, h3, h4, h5 {
 
 /* KROPKA */
 .timeline-dot {
-    position: absolute;
-    left: -44px;
-    top: 10px;
     width: 18px;
     height: 18px;
     border-radius: 50%;
     background: var(--background-color);
     border: 3px solid var(--accent-color);
+    flex-shrink: 0;
 }
 
 /* MOBILE */
