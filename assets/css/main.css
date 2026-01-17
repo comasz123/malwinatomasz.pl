@@ -126,6 +126,9 @@ h1, h2, h3, h4, h5 {
 body.start-page .site-nav a {
     color: var(--menu-color-start);
 }
+body.start-page .site-nav a:hover {
+    color: var(--accent-color);
+}
 
 .site-nav a::after {
     content: "";
