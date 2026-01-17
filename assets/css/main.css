@@ -224,7 +224,7 @@ body.start-page .site-nav a:hover {
 }
 
 .hero h2 {
-    font-size: 36px;
+    font-size: 3rem;
     font-weight: 700;
 }
 .hero h1,
@@ -275,14 +275,8 @@ body.start-page .site-nav a:hover {
 }
 
 .section-title h2 {
-    font-size: 60px;
+    font-size: 36px;
     font-weight: 700;
-    text-transform: uppercase;
-}
-
-.section-title h3 {
-    font-size: 50px;
-    font-weight: 500;
     text-transform: uppercase;
 }
 
