@@ -224,8 +224,12 @@ body.start-page .site-nav a:hover {
 }
 
 .hero h2 {
+    font-size: 5rem;
+    font-weight: 500;
+}
+.hero h3 {
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 300;
 }
 .hero h1,
 .hero h2,
