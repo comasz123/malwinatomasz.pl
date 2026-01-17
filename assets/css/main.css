@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .site-nav a {
-    color: var(--default-color);
+    color: var(--menu-color-default);
     text-transform: uppercase;
     font-size: 23px;
     font-family: var(--nav-font);
