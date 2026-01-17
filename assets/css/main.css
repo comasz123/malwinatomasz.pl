@@ -97,11 +97,9 @@ h1, h2, h3, h4, h5 {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1;
-    color: var(--menu-color-default);
+    color: forestgreen;
 }
-body.start-page .sitenam {
-    color: var(--menu-color-start);
-}
+
 
 /* =====================================================
    NAVIGATION
