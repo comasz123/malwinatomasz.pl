@@ -54,8 +54,8 @@ h1, h2, h3, h4, h5 {
 
 .site-header {
     --background-color: rgba(0, 0, 0, 0);
-    --default-color: #ffffff;
-    --heading-color: #ffffff;
+    --default-color: #2b2b2b;   /* warm black text */
+    --heading-color: #2b2b2b;
 
     position: fixed;
     top: 0;
@@ -119,17 +119,25 @@ h1, h2, h3, h4, h5 {
 }
 
 .site-nav a {
-    color: var(--menu-color-default);
+    color: var(--default-color);
     text-transform: uppercase;
     font-size: 23px;
     font-family: var(--nav-font);
     font-weight: 400;
 }
-body.start-page .site-nav a {
-    color: var(--menu-color-start);
-}
+
 body.start-page .site-nav a:hover {
     color: var(--accent-color);
+}
+/* START PAGE (top, transparent header) */
+body.start-page .site-header {
+    --default-color: #ffffff;
+    --heading-color: #ffffff;
+}
+
+body.start-page .site-nav a,
+body.start-page .mobile-nav-toggle {
+    color: #ffffff;
 }
 
 .site-nav a::after {
@@ -146,6 +154,17 @@ body.start-page .site-nav a:hover {
 .site-nav a:hover {
     color: var(--accent-color);
 }
+/* AFTER SCROLL — ALWAYS WHITE TEXT */
+.scrolled .site-header {
+    background-color: rgba(0, 0, 0, 0.8);
+    --default-color: #ffffff;
+    --heading-color: #ffffff;
+}
+
+.scrolled .site-nav a,
+.scrolled .mobile-nav-toggle {
+    color: #ffffff;
+}
 
 /* =====================================================
    MOBILE NAVIGATION
@@ -157,6 +176,8 @@ body.start-page .site-nav a:hover {
     border: 0;
     font-size: 34px;
     cursor: pointer;
+    color: var(--default-color);
+
 }
 
 @media (max-width: 1199px) {
