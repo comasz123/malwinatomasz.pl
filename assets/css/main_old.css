@@ -1,0 +1,507 @@
+/* =====================================================
+   ROOT VARIABLES
+   ===================================================== */
+
+:root {
+    --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    --heading-font: "Domine", sans-serif;
+    --nav-font: "Quicksand", sans-serif;
+
+    --background-color: #FAF9F6;
+    --surface-color: #ffffff;
+    --default-color: #6c757d;
+    --heading-color: #3b434a;
+    --accent-color: #ffbb27;
+    --contrast-color: #000000;
+
+    --menu-color-default: #2b2b2b; /* warm black */
+    --menu-color-start: #ffffff;   /* or whatever start page needs */
+
+    scroll-behavior: smooth;
+}
+
+/* =====================================================
+   BASE ELEMENTS
+   ===================================================== */
+
+body {
+    font-family: var(--default-font);
+    color: var(--default-color);
+    background-color: var(--background-color);
+    margin: 0;
+}
+
+a {
+    color: var(--heading-color);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color .25s ease;
+}
+
+a:hover {
+    color: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    margin-top: 0;
+}
+
+/* =====================================================
+   HEADER (layout + behavior only)
+   ===================================================== */
+
+.site-header {
+    --background-color: rgba(0, 0, 0, 0);
+    --default-color: #2b2b2b;   /* warm black text */
+    --heading-color: #2b2b2b;
+
+    position: fixed;
+    top: 0;
+    inset-inline: 0;
+    z-index: 997;
+    min-height: 80px;
+
+    padding: 20px 0;
+    color: var(--default-color);
+    background-color: var(--background-color);
+    transition: all 0.5s;
+}
+
+.site-header .container-fluid {
+    height: 100%;
+    padding-inline: 40px;
+}
+.scrolled .site-header {
+    --background-color: rgba(0, 0, 0, 0.8);
+    padding: 12px 0;
+    box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+}
+
+/* =====================================================
+   LOGO
+   ===================================================== */
+
+.site-logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.site-logo img {
+    max-height: 36px;
+}
+.site-logo .sitename {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1;
+    color: forestgreen;
+}
+
+
+/* =====================================================
+   NAVIGATION
+   ===================================================== */
+
+.site-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav a {
+    color: var(--default-color);
+    text-transform: uppercase;
+    font-size: 23px;
+    font-family: var(--nav-font);
+    font-weight: 400;
+}
+
+body.start-page .site-nav a:hover {
+    color: var(--accent-color);
+}
+/* START PAGE (top, transparent header) */
+body.start-page .site-header {
+    --default-color: #ffffff;
+    --heading-color: #ffffff;
+}
+
+body.start-page .site-nav a,
+body.start-page .mobile-nav-toggle {
+    color: #ffffff;
+}
+
+.site-nav a::after {
+    content: "";
+    position: relative;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-color);
+    transition: width .3s ease;
+}
+
+.site-nav a:hover {
+    color: var(--accent-color);
+}
+/* AFTER SCROLL — ALWAYS WHITE TEXT */
+.scrolled .site-header {
+    background-color: rgba(0, 0, 0, 0.8);
+    --default-color: #ffffff;
+    --heading-color: #ffffff;
+}
+
+.scrolled .site-nav a,
+.scrolled .mobile-nav-toggle {
+    color: #ffffff;
+}
+/* MOBILE MENU – SCROLLED STATE */
+.scrolled .site-nav .nav-list {
+    background-color: var(--background-color); /* jasne tło */
+}
+
+.scrolled .site-nav .nav-list a {
+    color: #2b2b2b; /* warm black – WIDOCZNE */
+}
+
+/* =====================================================
+   MOBILE NAVIGATION
+   ===================================================== */
+
+.mobile-nav-toggle {
+    display: none;
+    background: none;
+    border: 0;
+    font-size: 34px;
+    cursor: pointer;
+    color: var(--default-color);
+
+}
+
+@media (max-width: 1199px) {
+
+    .mobile-nav-toggle {
+        display: block;
+    }
+    .site-nav {
+        position: relative;
+    }
+
+    .site-nav .nav-list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--background-color);
+        border-top: 1px solid rgba(0,0,0,.08);
+        display: none;
+        z-index: 1000;
+    }
+
+    body.mobile-nav-open .site-nav .nav-list {
+        display: flex;
+    }
+
+    .site-nav li {
+        padding: 18px;
+        border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+
+    .site-nav a {
+        font-size: 20px;
+    }
+    /* MOBILE MENU COLORS */
+    .site-nav .nav-list a {
+        color: var(--menu-color-default);
+    }
+
+    /* START PAGE */
+    body.start-page .site-nav .nav-list {
+        background-color: transparent;
+    }
+
+    body.start-page .site-nav .nav-list a {
+        color: #ffffff;
+    }
+
+    /* SCROLLED – ALWAYS READABLE */
+    .scrolled .site-nav .nav-list {
+        background-color: var(--background-color);
+    }
+
+    .scrolled .site-nav .nav-list a {
+        color: #2b2b2b;
+    }
+
+}
+
+/* =====================================================
+   HERO SECTION
+   ===================================================== */
+
+.hero {
+    min-height: 100vh;
+    padding-top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h2 {
+    font-size: 5rem;
+    font-weight: 500;
+}
+.hero h3 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+.hero h1,
+.hero h2,
+.hero p {
+    color: #fff;
+}
+
+
+.hero p {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+/* HERO SCROLL ARROW (Laura original behavior) */
+.hero .btn-scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    z-index: 3;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 48px;
+
+    transition: color 0.3s ease;
+}
+
+.hero .btn-scroll:hover {
+    color: var(--accent-color);
+}
+
+
+/* =====================================================
+   SECTIONS (GLOBAL)
+   ===================================================== */
+
+.section {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+/* =====================================================
+   ABOUT
+   ===================================================== */
+
+.about .content h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.about li i {
+    color: var(--accent-color);
+    margin-right: 6px;
+}
+
+/* =====================================================
+   TIMELINE
+   ===================================================== */
+/* =====================================================
+   TIMELINE – POPRAWIONA IMPLEMENTACJA
+   ===================================================== */
+
+.timeline-track {
+    position: relative;
+    padding-left: 60px;
+}
+
+/* CIĄGŁA LINIA */
+.timeline-track::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 28px;
+    width: 2px;
+    background-color: var(--accent-color);
+}
+
+/* ROK */
+.timeLine-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+
+/* ELEMENT TIMELINE */
+.timeLine-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/* KROPKA */
+.timeline-dot {
+    position: absolute;
+    left: -44px;
+    top: 10px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--background-color);
+    border: 3px solid var(--accent-color);
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+    .timeline-track {
+        padding-left: 40px;
+    }
+
+    .timeline-track::before {
+        left: 18px;
+    }
+
+    .timeline-dot {
+        left: -32px;
+    }
+}
+
+
+
+/* =====================================================
+   GALLERY
+   ===================================================== */
+
+.gallery .gallery-item {
+    overflow: hidden;
+    border-right: 3px solid var(--background-color);
+    border-bottom: 3px solid var(--background-color);
+}
+
+.gallery img {
+    transition: transform .4s ease;
+}
+
+.gallery .gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+.footer {
+    padding: 30px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer h3 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.footer .copyright {
+    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    padding-top: 20px;
+}
+
+/* =====================================================
+   SCROLL TOP & PRELOADER
+   ===================================================== */
+
+.scroll-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+}
+.scroll-top i {
+    font-size: 48px;
+}
+
+.scroll-top.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#preloader {
+    position: fixed;
+    inset: 0;
+    background: var(--background-color);
+    z-index: 9999;
+}
