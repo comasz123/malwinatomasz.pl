@@ -2,7 +2,7 @@
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
         <!-- Logo -->
-        <a href="/index.html" class="site-logo d-flex align-items-center text-decoration-none">
+        <a href="/index.php" class="site-logo d-flex align-items-center text-decoration-none">
             <img src="/assets/img/logo_round.png" alt="Malwina & Tomasz logo">
             <span class="sitename ms-2">Malwina&Tomasz</span>
         </a>
@@ -10,11 +10,11 @@
         <!-- Navigation -->
         <nav id="navmenu" class="site-nav">
             <ul class="nav-list">
-                <li><a href="/index.html">HOME</a></li>
-                <li><a href="/malwinatomasz.html">RAZEM</a></li>
-                <li><a href="/malwina.html">MALWINA</a></li>
-                <li><a href="/tomasz.html">TOMASZ</a></li>
-                <li><a href="/wyszukiwarka.html">WYSZUKIWARKA</a></li>
+                <li><a href="/index.php">HOME</a></li>
+                <li><a href="/malwinatomasz.php">RAZEM</a></li>
+                <li><a href="/malwina.php">MALWINA</a></li>
+                <li><a href="/tomasz.php">TOMASZ</a></li>
+                <li><a href="/wyszukiwarka.php">WYSZUKIWARKA</a></li>
             </ul>
 
             <!-- Mobile toggle -->
