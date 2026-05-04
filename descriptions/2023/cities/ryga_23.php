@@ -66,6 +66,7 @@
               <a href="/trips/2023/lotwa/ryga/IMG_0798.jpeg" class="glightbox" data-gallery="images-gallery">
                 <img oncontextmenu="return false" src="/assets/img/trips_s/2023/lotwa/ryga/IMG_0798_cropped.webp" alt="" class="img-fluid">
               </a>
+            </a>
             </div>
           </div><!-- End Gallery Item -->
 

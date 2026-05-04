@@ -5,73 +5,91 @@
   <?php include 'includes/head.php'; ?>
 </head>
 
-<body class="start-page">
+<body>
+<?php include 'includes/header.php'; ?>
+<main class="main">
+  <!-- Timeline -->
+  <div class="container">
+    
+      <section id="timeLine" class="timeLine section">
 
-  <?php include 'includes/header.php'; ?>
+        <!-- ===== Section Title ===== -->
+        <div class="container section-title">
+          <h2>Nasze podróże razem</h2>
+          <h3>Podzielone na lata</h3>
+          <h5 id="distanceCar"></h5>
+          <h5 id="distanceFlight"></h5>
+        </div>
 
-  <main class="main">
-
-    <section id="hero" class="hero section dark-background">
-
-      <img src="./assets/img/IMG_9229.jpeg" alt="" data-aos="fade-in">
-
-      <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
-        <h2>Malwina&Tomasz</h2>
-        <p>Nasza strona o podróżach, które odbyliśmy razem lub osobno</p>
-      </div>
-      
-        <a href="#about"
-           class="btn-scroll"
-           aria-label="Przewiń do sekcji O nas">
-          <i class="bi bi-chevron-down"></i>
-        </a>
-      
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Malwina&Tomasz</h2>
-        <p>Nasza strona o podróżach które odbyliśmy razem, lub osobno</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="./assets/img/logo.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>Kochamy podróżować i dlatego powstała ta strona</h2>
-            <div class="row">
-              <p>Zorganizowana jest następująco:</p>
-                <div class="col-lg-9">
-                  <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Część kto i z kim/MENU:</strong> <span>Większość podróży odbywamy razem</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Lata:</strong> <span>każda część podzielona jest na lata</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Lista:</strong> <span>podróże jakie odbyliśmy w danym roku</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Podróże:</strong> <span>pokazujące konkretne podróże</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Wyszukiwarka:</strong> <span>jest też wyszukiwarka po latach, krajach i miastach</span></li>
-                </ul>
+        <!-- ===== Timeline ===== -->
+        <div class="container">
+          <div class="timeline-track">
+            <?php
+            include 'trips.php';
+            foreach ($trips as $year => $yearTrips) {
+            ?>
+            <div class="timeLine-item">
+              <div class="row align-items-center">
+                <span class="timeline-dot"></span>
+                <div class="col-12 col-md-2 col-lg-2 d-flex align-items-center position-relative">
+                  <h3 class="timeLine-title"><?php echo $year; ?></h3>
+                </div>
               </div>
-              
             </div>
-            <p class="py-3">
-              Nie promujemy się, nie zamieszczamy reklam, nie śledzimy naszych odwiedzających, nie umieszczamy żadnych plików cookie.
-            </p>
-            <p>Możesz się z nami skontaktować wysyłając email na <a href="mailto:info@malwinatomasz.pl">info@malwinatomasz.pl</a></p>
+            <?php
+            foreach ($yearTrips as $trip) {
+            ?>
+            <div class="timeLine-item">
+              <div class="row">
+                <div class="offset-md-2 offset-lg-2 col-12 col-md-4 col-lg-4">
+                  <h4 class="trip-title">
+                    <?php if ($trip['url']) { ?>
+                    <a href="<?php echo $trip['url']; ?>">
+                      <?php echo $trip['title']; ?>
+                    </a>
+                    <?php } else { ?>
+                      <?php echo $trip['title']; ?>
+                    <?php } ?>
+                  </h4>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                  <h5 class="trip-cities">
+                    <?php
+                    $cityLinks = [];
+                    foreach ($trip['cities'] as $city) {
+                        if ($city['url']) {
+                            $cityLinks[] = '<a href="' . $city['url'] . '">' . $city['name'] . '</a>';
+                        } else {
+                            $cityLinks[] = $city['name'];
+                        }
+                    }
+                    echo implode(', ', $cityLinks);
+                    ?>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <?php
+            }
+            }
+            ?>
           </div>
         </div>
 
-      </div>
+      </section><!-- /timeLine Section -->
+    </div>
+  
 
-    </section><!-- /About Section -->
-  </main>
+</main>
 
-  <?php include 'includes/footer.php'; ?>
 
+<?php include 'includes/footer.php'; ?>
+<script src="./assets/vendor/aos/aos.js"></script>
+<script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+<!-- Main JS File -->
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/distance.js"></script>
 </body>
 
 </html>
