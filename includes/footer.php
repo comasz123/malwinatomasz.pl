@@ -1,0 +1,27 @@
+<footer class="footer position-relative dark-background">
+    <div class="container">
+        <div class="copyright">
+            <span>Copyright</span>
+            <strong class="px-1 sitename">Malwina&Tomasz</strong>
+            <span>All Rights Reserved</span>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll Top -->
+<a href="#"
+   class="scroll-top d-flex align-items-center justify-content-center"
+   aria-label="Scroll to top">
+    <i class="bi bi-arrow-up-short"></i>
+</a>
+
+<!-- Preloader -->
+<div id="preloader" aria-hidden="true"></div>
+
+<!-- Vendor JS Files -->
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/aos/aos.js"></script>
+<script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+<!-- Main JS File -->
+<script src="/assets/js/main.js"></script>
